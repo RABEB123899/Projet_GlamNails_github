@@ -17,3 +17,35 @@
         <a href="produits.html">Produits</a>
     </nav>
 </header>
+<section class="form-section">
+    <h2>Formulaire de Réservation</h2>
+
+    <form id="reservationForm">
+        
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="service">Service :</label>
+        <select id="service" name="service" required>
+            <option value="">-- Choisir un service --</option>
+            <option>Manucure Classique</option>
+            <option>Ongles en Gel</option>
+            <option>Pédicure</option>
+            <option>Nail Art</option>
+        </select>
+
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="heure">Heure :</label>
+        <input type="time" id="heure" name="heure" required>
+
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
