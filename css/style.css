@@ -209,17 +209,17 @@ nav a:hover {
     background-color: #DDA0DD;
     color: #4A2D2D;
     padding: 35px 20px;
-    text-align: left;
-    margin-top: 0;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .footer-bloc {
-    text-align: right;
+    text-align: center;
 }
 
 .footer-col {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 250px;
     margin: 10px;
     vertical-align: top;
 }
