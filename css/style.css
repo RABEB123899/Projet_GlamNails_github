@@ -204,3 +204,48 @@ nav a:hover {
     font-size: 1.1rem;
     font-weight: bold;
 }
+
+.footer {
+    background-color: #DDA0DD;
+    color: #4A2D2D;
+    padding: 35px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-bloc {
+    text-align: center;
+}
+
+.footer-col {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.footer-col h3 {
+    color: #9932CC;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #9932CC;
+    padding-bottom: 5px;
+}
+
+.footer-col p,
+.footer-col a {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #4A2D2D;
+    font-weight: bold;
+}
+
+.footer-col a:hover {
+    color: #9932CC;
+}
+
+.footer-copy {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
