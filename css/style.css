@@ -249,3 +249,18 @@ nav a:hover {
     font-size: 14px;
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+
+    .hero-content,
+    .products-grid,
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
