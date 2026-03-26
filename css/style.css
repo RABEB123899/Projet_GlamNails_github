@@ -264,3 +264,22 @@ nav a:hover {
         margin-bottom: 20px;
     }
 }
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #C71585;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#scrollTopBtn:hover {
+  background-color: #ff4f85;
+}
