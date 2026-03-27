@@ -12,4 +12,12 @@ function validerFormulaire(event) {
     var heure = document.getElementById("heure");
 
     var message = "";
+    if (!nom.value.trim()) message += "- Le nom est obligatoire.\n";
+
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!email.value.trim()) {
+    message += "- L'email est obligatoire.\n";
+} else if (!emailRegex.test(email.value)) {
+    message += "- L'email n'est pas valide.\n";
+}
 }
