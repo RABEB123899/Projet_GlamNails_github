@@ -32,4 +32,8 @@ if (!/^\d{8}$/.test(tel.value)) message += "- Le numéro de téléphone doit con
 if (!service.value) message += "- Veuillez choisir un service.\n";
 if (!date.value) message += "- Veuillez sélectionner une date.\n";
 if (!heure.value) message += "- Veuillez sélectionner une heure.\n";
+if (message !== "") {
+    alert("Veuillez corriger les erreurs suivantes :\n\n" + message);
+    return false;
+}
 }
