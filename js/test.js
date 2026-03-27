@@ -36,4 +36,22 @@ if (message !== "") {
     alert("Veuillez corriger les erreurs suivantes :\n\n" + message);
     return false;
 }
+var recap =
+    "Confirmez-vous votre réservation avec les informations suivantes ?\n\n" +
+    "Nom : " + nom.value + "\n" +
+    "Email : " + email.value + "\n" +
+    "Téléphone : " + tel.value + "\n" +
+    "Service : " + service.value + "\n" +
+    "Date : " + date.value + "\n" +
+    "Heure : " + heure.value;
+
+var ok = confirm(recap);
+
+if (!ok) return false;
+alert("🎉 Réservation enregistrée avec succès !");
+
+window.location.href = "produits.html";
+
+return true
+
 }
