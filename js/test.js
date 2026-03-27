@@ -52,6 +52,6 @@ alert("🎉 Réservation enregistrée avec succès !");
 
 window.location.href = "produits.html";
 
-return true
+return true;
 
 }
