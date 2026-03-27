@@ -20,4 +20,7 @@ if (!email.value.trim()) {
 } else if (!emailRegex.test(email.value)) {
     message += "- L'email n'est pas valide.\n";
 }
+if (mdp.value.length < 6) message += "- Le mot de passe doit contenir au moins 6 caractères.\n";
+
+if (mdp.value !== conf_mdp.value) message += "- Les mots de passe ne correspondent pas.\n";
 }
