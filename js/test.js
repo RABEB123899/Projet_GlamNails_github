@@ -27,4 +27,9 @@ if (mdp.value.length < 6) {
 if (mdp.value !== conf_mdp.value) {
     message += "- Les mots de passe ne correspondent pas.\n";
 }
+if (!/^\d{8}$/.test(tel.value)) message += "- Le numéro de téléphone doit contenir 8 chiffres.\n";
+
+if (!service.value) message += "- Veuillez choisir un service.\n";
+if (!date.value) message += "- Veuillez sélectionner une date.\n";
+if (!heure.value) message += "- Veuillez sélectionner une heure.\n";
 }
