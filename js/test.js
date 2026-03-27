@@ -55,3 +55,4 @@ window.location.href = "produits.html";
 return true;
 
 }
+document.getElementById("reservationForm").addEventListener("submit", validerFormulaire);
