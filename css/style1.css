@@ -231,3 +231,18 @@ header h1 {
   font-weight: bold;
   color: #2e7d32;
   }
+  @media (max-width: 768px) {
+  .produit-card {
+    width: 90%;
+  }
+
+  .commande-ligne {
+    flex-direction: column;
+  }
+
+  .section-produits,
+  .recap {
+    margin: 15px;
+    padding: 15px;
+  }
+}
