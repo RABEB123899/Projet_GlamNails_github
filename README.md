@@ -119,5 +119,28 @@ git pull origin develop
 - JavaScript 
 
 ---
+## Gestion des conflits Git
+
+**Cause du conflit :**  
+Le conflit est survenu car deux branches (`feature-script-index` et `develop`) ont modifié le même fichier (`css/style.css`) sur les mêmes lignes. Git ne pouvait pas décider automatiquement quelle version conserver.
+
+**Méthode de résolution :**  
+Le conflit a été résolu manuellement en choisissant et combinant les modifications des deux branches. Les marqueurs de conflit (`<<<<<<<`, `=======`, `>>>>>>>`) ont été supprimés et le fichier a été validé avec les commandes suivantes :
+
+```bash
+git add css/style.css
+git commit -m "resolve conflict css"
+git push
+```
+<img width="1592" height="865" alt="image" src="https://github.com/user-attachments/assets/2572b4c6-1948-45d3-abe9-3937250aec8c" />
+
+<img width="1907" height="834" alt="image" src="https://github.com/user-attachments/assets/780d86c3-aec5-4996-be7a-d3e289cba813" />
+
+
+<img width="1641" height="992" alt="image" src="https://github.com/user-attachments/assets/37a3a552-cee3-4e3f-9caf-22f4d2563a55" />
+
+
+<img width="1645" height="952" alt="image" src="https://github.com/user-attachments/assets/0bf4f47e-dd18-4edd-83b3-7349e91b1268" />
+
 
 © 2026 GlamNails — Tous droits réservés
