@@ -200,3 +200,49 @@
 
       </form>
     </section>
+    <!-- =============== RÉCAPITULATIF DE COMMANDE =============== -->
+    <section class="recap">
+      <h2>Récapitulatif de commande</h2>
+      <p class="intro">
+        Les produits ajoutés au panier apparaissent ici. Vous pouvez modifier les quantités
+        ou supprimer un article.
+      </p>
+
+      <table class="table-recap">
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Quantité</th>
+            <th>Prix unitaire (DT)</th>
+            <th>Sous-total (DT)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="recap-body">
+          <tr class="ligne-vide">
+            <td colspan="5">Aucun produit sélectionné pour le moment.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="libelle-total">Total général :</td>
+            <td colspan="2" class="valeur-total">
+              <span id="total-general">0.00</span> DT
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="recap-actions">
+        <button type="button" id="btn-valider" class="btn-commande">Valider la commande</button>
+        <button type="button" id="btn-reset" class="btn-commande btn-secondaire">Réinitialiser</button>
+      </div>
+
+      <p id="message-confirmation" class="message-confirmation"></p>
+    </section>
+
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
