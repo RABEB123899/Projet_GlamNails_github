@@ -44,8 +44,19 @@ GlamNails/
 - Design responsive adapté aux mobiles
 
 ---
+# Projet DS2 - Docker et CI/CD
 
-## Étapes d'installation
+## Prérequis
+- Docker Desktop installé
+- Docker version 28.x ou plus
+- Docker Compose activé
+- Git installé
+
+## Lancer le projet
+```bash
+docker compose up --build
+
+## Étapes d'installation ds1
 
 1. Cloner le dépôt :
 ```bash
