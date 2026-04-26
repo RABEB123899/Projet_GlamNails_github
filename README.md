@@ -44,8 +44,19 @@ GlamNails/
 - Design responsive adapté aux mobiles
 
 ---
+# Projet DS2 - Docker et CI/CD
 
-## Étapes d'installation
+## Prérequis
+- Docker Desktop installé
+- Docker version 28.x ou plus
+- Docker Compose activé
+- Git installé
+
+## Lancer le projet
+```bash
+docker compose up --build
+
+## Étapes d'installation ds1
 
 1. Cloner le dépôt :
 ```bash
@@ -120,6 +131,18 @@ git pull origin develop
 
 ---
 ## Gestion des conflits Git
+
+**Cause du conflit :**  
+Le conflit est survenu car deux branches (`feature-script-index` et `develop`) ont modifié le même fichier (`css/style.css`) sur les mêmes lignes. Git ne pouvait pas décider automatiquement quelle version conserver.
+
+**Méthode de résolution :**  
+Le conflit a été résolu manuellement en choisissant et combinant les modifications des deux branches. Les marqueurs de conflit (`<<<<<<<`, `=======`, `>>>>>>>`) ont été supprimés et le fichier a été validé avec les commandes suivantes :
+
+```bash
+git add css/style.css
+git commit -m "resolve conflict css"
+git push
+
 
 **Cause du conflit :**  
 Le conflit est survenu car deux branches (`feature-script-index` et `develop`) ont modifié le même fichier (`css/style.css`) sur les mêmes lignes. Git ne pouvait pas décider automatiquement quelle version conserver.
