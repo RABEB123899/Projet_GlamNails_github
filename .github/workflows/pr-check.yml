@@ -1,0 +1,29 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check HTML files
+        run: |
+          echo "Checking HTML files..."
+          ls app/*.html
+
+      - name: Check CSS files
+        run: |
+          echo "Checking CSS files..."
+          ls app/*.css
+
+      - name: Check JS files
+        run: |
+          echo "Checking JS files..."
+          ls app/*.js
