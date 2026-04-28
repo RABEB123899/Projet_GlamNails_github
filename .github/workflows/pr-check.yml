@@ -1,0 +1,26 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pr-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Télécharger le code
+        uses: actions/checkout@v4
+
+      - name: Vérifier les fichiers HTML
+        run: |
+          ls html/*.html
+
+      - name: Vérifier les fichiers CSS
+        run: |
+          ls css/*.css
+
+      - name: Vérifier les fichiers JS
+        run: |
+          ls js/*.js
