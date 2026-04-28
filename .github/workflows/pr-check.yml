@@ -6,24 +6,21 @@ on:
       - main
 
 jobs:
-  check:
+  pr-check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Télécharger le code
+        uses: actions/checkout@v4
 
-      - name: Check HTML files
+      - name: Vérifier les fichiers HTML
         run: |
-          echo "Checking HTML files..."
-          ls app/*.html
+          ls html/*.html
 
-      - name: Check CSS files
+      - name: Vérifier les fichiers CSS
         run: |
-          echo "Checking CSS files..."
-          ls app/*.css
+          ls css/*.css
 
-      - name: Check JS files
+      - name: Vérifier les fichiers JS
         run: |
-          echo "Checking JS files..."
-          ls app/*.js
+          ls js/*.js
